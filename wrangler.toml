@@ -1,0 +1,27 @@
+name = "antrian-api"
+main = "worker.js"
+compatibility_date = "2024-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "antrian"
+database_id = "cbd81769-6ce7-4b5a-bbfe-00e35c460ece"
+
+# [SECURITY] Origin frontend yang diizinkan CORS.
+# Ganti domain di bawah ini dengan domain GitHub Pages / Vercel tempat frontend Anda di-host
+[vars]
+ALLOWED_ORIGINS = "https://mhmmd-aprizal.github.io"
+
+# Perintah Setup & Deploy untuk aplikasi Antrian:
+#
+# 1. Buat database D1 (jika belum):
+#    wrangler d1 create antrian
+#
+# 2. Jalankan skrip tabel antrian ke database D1:
+#    wrangler d1 execute antrian --file=./schema.sql
+#
+# 3. Tes query atau lihat isi data secara langsung via CLI:
+#    wrangler d1 execute antrian --command="SELECT * FROM antrian;"
+#
+# 4. Deploy worker ke Cloudflare:
+#    wrangler deploy
