@@ -10,7 +10,7 @@ database_id = "cbd81769-6ce7-4b5a-bbfe-00e35c460ece"
 # [SECURITY] Origin frontend yang diizinkan CORS.
 # Ganti domain di bawah ini dengan domain GitHub Pages / Vercel tempat frontend Anda di-host
 [vars]
-ALLOWED_ORIGINS = "https://mhmmd-aprizal.github.io"
+ALLOWED_ORIGINS = "https://mhmmd-aprizal.github.io/Simulasi-Pemodelan/"
 
 # Perintah Setup & Deploy untuk aplikasi Antrian:
 #
